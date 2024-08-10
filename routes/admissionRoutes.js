@@ -19,7 +19,7 @@ cloudinary.config({
 
 router.post('/', upload.single('picture'), async (req, res) => {
   try {
-    const { fullName, fatherName, email, phoneNumber, fatherPhoneNumber, bFormCnic, fatherCnic, yourClass, school, college, group, gender, dateOfBirth, address } = req.body;
+    const { fullName, fatherName, email, phoneNumber, fatherPhoneNumber, bFormCnic, fatherCnic, yourClass, school, college, group, gender,address } = req.body;
     let pictureUrl = '';
 
     if (req.file) {
@@ -48,7 +48,6 @@ router.post('/', upload.single('picture'), async (req, res) => {
       college,
       group,
       gender,
-      dateOfBirth,
       address,
       picture: pictureUrl,
     });

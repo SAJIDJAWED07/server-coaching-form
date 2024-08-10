@@ -12,7 +12,6 @@ const admissionSchema = new mongoose.Schema({
   college: { type: String, required: true },
   group: { type: String, required: true },
   gender: { type: String, required: true },
-  dateOfBirth: { type: Date, required: true },
   address: { type: String, required: true },
   picture: { type: String, required: true }
 });
